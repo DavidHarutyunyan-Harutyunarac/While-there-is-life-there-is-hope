@@ -1,0 +1,35 @@
+@import '../variables';
+
+@mixin button-reset {
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.button_parent {
+  padding: 46px 179px 0 16px;
+}
+
+.button_inner {
+  @include button-reset;
+  left: 16px;
+  top: 270px;
+  width: 180px;
+  height: 45px;
+  background-color: $primary-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 25px;
+  color: #ffffff;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  font-family: $font-stack;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.button_inner:hover,
+.button_inner:focus {
+  background-color: $secondary-color;
+}
